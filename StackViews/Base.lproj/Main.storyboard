@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WZn-Gt-ihT">
-                                <rect key="frame" x="16" y="20" width="343" height="240"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAu-xH-O6v">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFb-Aq-x8s">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <state key="normal" title="⚙️ Settings"/>
                                                 <connections>
                                                     <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsI-Sa-I3s"/>
@@ -46,11 +45,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rW5-II-2fT">
-                                        <rect key="frame" x="0.0" y="80" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="80" width="375" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7o-E7-RsX">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
-                                                <state key="normal" title="⚙️ A Setting"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                <state key="normal" title="🎧 Sound"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,11 +62,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0G-YG-IUE">
-                                        <rect key="frame" x="0.0" y="160" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="160" width="375" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-aw-fKS">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
-                                                <state key="normal" title="⚙️ Another Setting"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                <state key="normal" title="👍 OK"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,13 +81,17 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="WZn-Gt-ihT" secondAttribute="trailing" id="7L8-dm-rWS"/>
-                            <constraint firstItem="WZn-Gt-ihT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aGc-hF-gIu"/>
-                            <constraint firstItem="WZn-Gt-ihT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sQN-2J-I3l"/>
+                            <constraint firstAttribute="trailing" secondItem="WZn-Gt-ihT" secondAttribute="trailing" id="5Ji-wr-va5"/>
+                            <constraint firstItem="WZn-Gt-ihT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Asv-R1-VUS"/>
+                            <constraint firstItem="WZn-Gt-ihT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="p9L-ba-6Xv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="emojiViews" destination="rW5-II-2fT" collectionClass="NSMutableArray" id="epF-SO-gfg"/>
+                        <outletCollection property="emojiViews" destination="x0G-YG-IUE" collectionClass="NSMutableArray" id="M4W-YR-OFB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
