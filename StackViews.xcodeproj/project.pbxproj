@@ -54,14 +54,22 @@
 		2DDB11D41E70930F00212599 /* StackViews */ = {
 			isa = PBXGroup;
 			children = (
-				2DDB11D51E70930F00212599 /* AppDelegate.swift */,
+				2DDB11E71E70931A00212599 /* Supporting Files */,
 				2DDB11D71E70930F00212599 /* ViewController.swift */,
 				2DDB11D91E70930F00212599 /* Main.storyboard */,
-				2DDB11DC1E70930F00212599 /* Assets.xcassets */,
-				2DDB11DE1E70930F00212599 /* LaunchScreen.storyboard */,
 				2DDB11E11E70930F00212599 /* Info.plist */,
 			);
 			path = StackViews;
+			sourceTree = "<group>";
+		};
+		2DDB11E71E70931A00212599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DDB11D51E70930F00212599 /* AppDelegate.swift */,
+				2DDB11DC1E70930F00212599 /* Assets.xcassets */,
+				2DDB11DE1E70930F00212599 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
