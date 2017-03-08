@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
-        for emojiView in emojiViews{
-            emojiView.isHidden = !emojiView.isHidden
+        UIView.animate(withDuration: 0.5) { 
+            self.emojiViews.forEach{
+                $0.isHidden = !$0.isHidden
+            }
         }
     }
     @IBOutlet var emojiViews: [UIView]!{

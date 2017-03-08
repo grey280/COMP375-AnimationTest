@@ -44,7 +44,7 @@
                                             <constraint firstAttribute="height" constant="80" id="x7Z-2E-3VL"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rW5-II-2fT">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rW5-II-2fT">
                                         <rect key="frame" x="0.0" y="80" width="375" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7o-E7-RsX">
@@ -61,7 +61,7 @@
                                             <constraint firstItem="n7o-E7-RsX" firstAttribute="top" secondItem="rW5-II-2fT" secondAttribute="top" id="ghf-ca-6Uh"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0G-YG-IUE">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0G-YG-IUE">
                                         <rect key="frame" x="0.0" y="160" width="375" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-aw-fKS">
