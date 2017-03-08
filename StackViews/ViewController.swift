@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     }
     @IBOutlet var emojiViews: [UIView]!{
         didSet{
-            for emojiView in emojiViews{
-                emojiView.isHidden = true
+            emojiViews.forEach{
+                $0.isHidden = true
             }
         }
     }
