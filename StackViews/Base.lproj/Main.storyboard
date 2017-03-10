@@ -31,7 +31,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <state key="normal" title="⚙️ Settings"/>
                                                 <connections>
-                                                    <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsI-Sa-I3s"/>
+                                                    <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLT-Wu-26g"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -50,6 +50,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7o-E7-RsX">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <state key="normal" title="🎧 Sound"/>
+                                                <connections>
+                                                    <action selector="toggleEmojiViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DJ7-xk-wxO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,6 +70,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-aw-fKS">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <state key="normal" title="👍 OK"/>
+                                                <connections>
+                                                    <action selector="toggleEmojiViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nt6-p4-bgN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
