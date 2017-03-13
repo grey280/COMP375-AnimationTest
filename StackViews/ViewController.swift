@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func settingsSwipeDown(_ sender: Any) {
-        UIView.animate(withDuration: 0.5){
+        let showLoop = {
             self.emojiViews.forEach{
                 $0.isHidden = false
             }
         }
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: showLoop, completion: nil)
     }
     @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
         UIView.animate(withDuration: 0.5){
