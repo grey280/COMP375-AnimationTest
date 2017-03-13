@@ -29,9 +29,12 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFb-Aq-x8s">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                <gestureRecognizers/>
                                                 <state key="normal" title="⚙️ Settings"/>
                                                 <connections>
                                                     <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLT-Wu-26g"/>
+                                                    <outletCollection property="gestureRecognizers" destination="32B-3X-pES" appends="YES" id="im6-Fl-g2c"/>
+                                                    <outletCollection property="gestureRecognizers" destination="wdP-Xe-IJX" appends="YES" id="JRH-JC-Wcx"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -49,9 +52,11 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7o-E7-RsX">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                <gestureRecognizers/>
                                                 <state key="normal" title="🎧 Sound"/>
                                                 <connections>
                                                     <action selector="toggleEmojiViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DJ7-xk-wxO"/>
+                                                    <outletCollection property="gestureRecognizers" destination="2pv-oh-gty" appends="YES" id="RZL-cC-wlF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -69,9 +74,11 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-aw-fKS">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                                <gestureRecognizers/>
                                                 <state key="normal" title="👍 OK"/>
                                                 <connections>
                                                     <action selector="toggleEmojiViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nt6-p4-bgN"/>
+                                                    <outletCollection property="gestureRecognizers" destination="mRK-Sa-lYt" appends="YES" id="qQd-eM-Pr9"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -100,6 +107,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="32B-3X-pES" userLabel="SettingsSwipeDown">
+                    <connections>
+                        <action selector="settingsSwipeDown:" destination="BYZ-38-t0r" id="AK4-Xn-1Xv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="mRK-Sa-lYt" userLabel="OKSwipeUp">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="M0J-LA-n8C"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="2pv-oh-gty" userLabel="SoundSwipeUp">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="RzC-Sa-IW1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="wdP-Xe-IJX" userLabel="SettingsSwipeUp">
+                    <connections>
+                        <action selector="swipeUp:" destination="BYZ-38-t0r" id="W8V-tB-QkV"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>

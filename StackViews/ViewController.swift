@@ -14,6 +14,21 @@ class ViewController: UIViewController {
         toggleEmojiViews(sender)
     }
     
+    @IBAction func settingsSwipeDown(_ sender: Any) {
+        UIView.animate(withDuration: 0.5){
+            self.emojiViews.forEach{
+                $0.isHidden = false
+            }
+        }
+    }
+    @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
+        UIView.animate(withDuration: 0.5){
+            self.emojiViews.forEach{
+                $0.isHidden = true
+            }
+        }
+    }
+    
     @IBAction func toggleEmojiViews(_ sender: UIButton){
         UIView.animate(withDuration: 0.5) {
             self.emojiViews.forEach{
@@ -23,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet var emojiViews: [UIView]!{
-        didSet{
+        didSet{ // Hide them all when the view opens; could do this in Storyboard, but that'd be more effort probably
             emojiViews.forEach{
                 $0.isHidden = true
             }
