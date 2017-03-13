@@ -23,19 +23,21 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: showLoop, completion: nil)
     }
     @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
-        UIView.animate(withDuration: 0.5){
+        let showLoop = {
             self.emojiViews.forEach{
                 $0.isHidden = true
             }
         }
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: showLoop, completion: nil)
     }
     
     @IBAction func toggleEmojiViews(_ sender: UIButton){
-        UIView.animate(withDuration: 0.5) {
+        let showLoop = {
             self.emojiViews.forEach{
                 $0.isHidden = !$0.isHidden
             }
         }
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: showLoop, completion: nil)
     }
     
     @IBOutlet var emojiViews: [UIView]!{
